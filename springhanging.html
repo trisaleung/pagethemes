@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+    <title>Spring Hanging</title>
+   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Quattrocento"/>
+   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fanwood-Text"/>
+    <style>
+        body {
+            background-color: #E4E7DF;
+        }
+
+        #title-container {
+            width: 70%;
+            height: 5em;
+            display: center;
+            border-bottom: 1px solid #3F3244;
+            margin-left: 15%;
+            margin-right: 15%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+
+        #wip-title {
+            font-family: 'Quattrocento';
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 300%;
+            color: #2F2235;
+        }
+
+        #wip-text {
+            font-family: 'Fanwood Text';
+            font-size: 100%;
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-column-gap: 5%;
+            box-sizing: border-box;
+        }
+
+        #lower-line {
+            border-bottom: 1px solid #3F3244;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        #wip-characters {
+            font-family: 'Fanwood Text';
+            font-size: 100%;
+            margin-right: 15%;
+            margin-left: 15%;
+            margin-top: 5%;
+            box-sizing: border-box;
+        }
+
+        .char {
+            background-color: #60495A;
+            height: 40vh;
+            width: 30vh;
+        }
+
+        #col-1 {
+            width: 30%;
+            float: left;
+            margin-right: 5%;
+            margin-bottom: 5%;
+        }
+
+        #col-2 {
+            width: 30%;
+            float: left;
+            margin-right: 5%;
+            margin-bottom: 5%;
+        }
+
+        #col-3 {
+            width: 30%;
+            float: left;
+            margin-bottom: 5%;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div id="title-container">
+        <h1 id="wip-title">Spring Hanging</h1>
+    </div>
+    <div id="wip-text">
+        <div id="column-one">
+            <p><em>wip desc</em>: text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+        </div>
+        <div id="column-two">
+            <p><em>genre</em>: text text text text text text text text</p>
+            <p><em>genre</em>: text text text text text text text text</p>
+            <p><em>genre</em>: text text text text text text text text</p>
+        </div>
+        <div id="column-three">
+            <p><em>genre</em>: text text text text text text text text</p>
+            <p><em>genre</em>: text text text text text text text text</p>
+            <p><em>genre</em>: text text text text text text text text</p>
+        </div>
+    </div>
+    <div id="lower-line"></div>
+    <div id="wip-characters">
+        <div class="row">
+            <div class="char" id="col-1">
+                <img src=""/>
+            </div>
+            <div class="char" id="col-2">
+                <img src=""/>
+            </div>
+            <div class="char" id="col-3">
+                <img src=""/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="char" id="col-1">
+                <img src=""/>
+            </div>
+            <div class="char" id="col-2">
+                <img src=""/>
+            </div>
+            <div class="char" id="col-3">
+                <img src=""/>
+            </div>
+        </div>
+    </div>
+</body>
