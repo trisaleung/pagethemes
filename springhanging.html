@@ -116,11 +116,12 @@
         }
 
         img {
-            height: auto;
+            height: 36vh;
             width: 100%;
             display: block;
             position: relative;
             transition: 0.4s;
+            object-fit: cover;
         }
 
         img:hover {
@@ -146,6 +147,27 @@
         a:active {
             color: #A9ACA9;
         }
+
+        @media only screen and (min-width: 1201px) {
+            #reveal {margin-top: -80%}
+        }
+
+        @media only screen and (max-width: 1200px) {
+            #reveal {margin-top: -80%}
+        }
+
+        @media only screen and (max-width: 800px) {
+            #title-container {padding-bottom: 10%;}
+            #reveal {margin-top: -160%;}
+            #wip-text {grid-template-rows: 30vh; overflow: auto}
+        }
+
+        @media only screen and (max-width: 500px) {
+            #title-container {padding-bottom: 22%;}
+            #reveal {margin-top: -200%; font-size: 70%;}
+            #wip-text {grid-template-rows: 30vh; overflow: auto}
+        }
+
     </style>
 </head>
 <body>
