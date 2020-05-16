@@ -2,10 +2,10 @@
 <head>
     <title>Spring Hanging</title>
    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Quattrocento"/>
-   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fanwood-Text"/>
+   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fanwood+Text"/>
     <style>
         body {
-            background-color: #E4E7DF;
+            background-color: #F8FAF3;
         }
 
         #title-container {
@@ -56,9 +56,11 @@
         }
 
         .char {
-            background-color: #60495A;
-            height: 40vh;
-            width: 30vh;
+            background-color: #CFC4CE;
+            height: 36vh;
+            width: 20vh;
+            transition: 0.4s;
+            overflow: hidden;
         }
 
         #col-1 {
@@ -87,11 +89,54 @@
             display: table;
             margin-top: 5%;
         }
+
+        #reveal {
+            padding: 5%;
+            text-align: center;
+            font-size: 80%;
+            height: 100%;
+            margin-bottom: 5%;
+            z-index: 1;
+            margin-top: -90%;
+            height: 100%;
+        }
+
+        img {
+            height: auto;
+            width: 100%;
+            display: block;
+            position: relative;
+            transition: 0.4s;
+        }
+
+        img:hover {
+            opacity: 0;
+        }
+
+        .hovering {
+            text-align: center;
+            font-family: "Fanwood Text"
+        }
+
+        a {
+            color: #443849;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        a:hover {
+            color: #CFC4CE;
+        }
+
+        a:active {
+            color: #A9ACA9;
+        }
     </style>
 </head>
 <body>
     <div id="title-container">
         <h1 id="wip-title">Spring Hanging</h1>
+        <p class="hovering">est 2019. vol 1. [link]. [link]. [link]. <a href="https://atelierwriting.tumblr.com/">credit</a>.</p>
     </div>
     <div id="wip-text">
         <div id="column-one">
@@ -112,24 +157,31 @@
     <div id="wip-characters">
         <div class="row">
             <div class="char" id="col-1">
-                <img src=""/>
+                <img src="https://66.media.tumblr.com/2709ef84e0e121b12e4c6effa7f50d01/tumblr_pa7pe6oj3K1xuaeq7o7_250.png" />
+                <div id="reveal">
+                    <p>[character]</p>
+                    <p>[subtitle]</p>
+                    <!-- relatively short snippet: it will not scroll -->
+                    <p>text text text text text text text text text text text text text text text text text text text text text text text text</p>
+                    <p>[link/tag]</p>
+                </div>
             </div>
             <div class="char" id="col-2">
-                <img src=""/>
+                <img src="https://66.media.tumblr.com/11ac463a236fe8a5adf6522736b0b974/tumblr_pa7pe6oj3K1xuaeq7o3_400.png"/>
             </div>
             <div class="char" id="col-3">
-                <img src=""/>
+                <img src="https://66.media.tumblr.com/870049cba83a0321cd6255cdd9df35bf/tumblr_pa7pe6oj3K1xuaeq7o6_400.png"/>
             </div>
         </div>
         <div class="row">
             <div class="char" id="col-1">
-                <img src=""/>
+                <img src="https://66.media.tumblr.com/4a67029302c857214b78c41856826844/tumblr_pa7pe6oj3K1xuaeq7o8_400.png"/>
             </div>
             <div class="char" id="col-2">
-                <img src=""/>
+                <img src="https://66.media.tumblr.com/f8d366dcd19ce8515e3342fcbfe375eb/tumblr_pa7pe6oj3K1xuaeq7o5_400.png"/>
             </div>
             <div class="char" id="col-3">
-                <img src=""/>
+                <img src="https://66.media.tumblr.com/2ddc63bdfa1f89e04b5e707564e3ef79/tumblr_pa7pe6oj3K1xuaeq7o4_400.png"/>
             </div>
         </div>
     </div>
