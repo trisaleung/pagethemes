@@ -16,12 +16,14 @@
     <title>star nav</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Muli"/>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ovo"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
         h1 {
             font-family: "Ovo";
             font-size: 5vh;
             text-align: center;
             font-weight: normal;
+            margin-top: 20vh;
         }
 
         ul {
@@ -34,29 +36,67 @@
         }
 
         .top-map-point {
-            transition: 1s;
+            position: relative;
+            display: inline-block;
+            padding: 5%;
         }
 
-        .top-map-point:hover {
-            text-decoration: underline;
-            transition: 1s;
+        .dropdown-content {
+            display: none;
+            position: relative;
+            z-index: 1;
+            transition: 0.3s;
+        }
+
+        .top-map-point:hover .dropdown-content {
+            display: block;
+            position: center;
+            transition: 0.3s;
         }
     </style>
+    <script>
+        $(document).ready(function() {
+            $(".star-empty").hover(function() {
+                $(this).replaceWith("&#9733;");
+            })
+        });
+    </script>
 </head>
 <body>
     <h1>the nav.</h1>
     <ul>
         <li class="top-map-point">
-            <span>&#9734;</span> <span>&#9733;</span> 
+            <span class="star-empty">&#9734;</span>
             the starmap
+            <div class="dropdown-content">
+                <ul>
+                    <li>test</li>
+                    <li>test</li>
+                    <li>test</li>
+                </ul>
+            </div>
         </li>
         <li class="top-map-point">
-            <span>&#9734;</span> <span>&#9733;</span> 
+            <span class="star-empty">&#9734;</span>
             the planets
+            <div class="dropdown-content">
+                <ul>
+                    <li>test</li>
+                    <li>test</li>
+                    <li>test</li>
+                </ul>
+            </div>
         </li>
         <li class="top-map-point">
-            <span>&#9734;</span> <span>&#9733;</span> 
+            <span class="star-empty">&#9734;</span>
             the moons
+            <div class="dropdown-content">
+                <ul>
+                    <li>test</li>
+                    <li>test</li>
+                    <li>test</li>
+                </ul>
+            </div>
         </li>
     </ul>
 </body>
